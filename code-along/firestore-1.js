@@ -22,5 +22,3 @@ document.addEventListener('DOMContentLoaded', async function (event) {
   // Step 3: Add code to Step 1 to add todo to Firestore
   // Step 4: Add code to allow completing todos
 })
-
-// initial commit from VS Code
