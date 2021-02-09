@@ -1,9 +1,9 @@
-document.addEventListener('DOMContentLoaded', async function(event) {
-  
+document.addEventListener('DOMContentLoaded', async function (event) {
+
   let db = firebase.firestore()
 
   // Step 1: Make the world's tiniest to-do app
-  document.querySelector('form').addEventListener('submit', function(event) {
+  document.querySelector('form').addEventListener('submit', function (event) {
     event.preventDefault()
 
     let todoText = document.querySelector('#todo').value
@@ -22,3 +22,5 @@ document.addEventListener('DOMContentLoaded', async function(event) {
   // Step 3: Add code to Step 1 to add todo to Firestore
   // Step 4: Add code to allow completing todos
 })
+
+// initial commit from VS Code
