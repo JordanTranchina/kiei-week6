@@ -1,6 +1,6 @@
 let db = firebase.firestore()
 
-window.addEventListener('DOMContentLoaded', async function(event) {
+window.addEventListener('DOMContentLoaded', async function (event) {
   // Step 1: Accept input from the "new post" form and write 
   // post data to Firestore. For best results, use square images
   // from Unsplash, e.g. https://unsplash.com/s/photos/tacos?orientation=squarish
@@ -13,7 +13,7 @@ window.addEventListener('DOMContentLoaded', async function(event) {
   //   db.collection('posts').add(). Along withthe username and image 
   //   URL, add a "likes" field and set it to 0; we'll use this later.
   // - Verify (in Firebase) that records are being added.
-  
+
   // Step 2: Read existing posts from Firestore and display them
   // when the page is loaded
   // - Read data using db.collection('posts').get()
@@ -40,7 +40,7 @@ window.addEventListener('DOMContentLoaded', async function(event) {
   //       </div>
   //     </div>
   //   `)
-  
+
   // Step 3: Implement the "like" button
   // - In the code we wrote for Step 2, attach an event listener to
   //   every "like-button".
