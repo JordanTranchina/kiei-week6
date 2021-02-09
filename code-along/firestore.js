@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', async function (event) {
   let db = firebase.firestore()
 
   // Step 1: Make the world's tiniest to-do app
-  document.querySelector("form").addEventListener("submit", function (event) {
+  document.querySelector("form").addEventListener("submit", async function (event) {
     event.preventDefault()
     console.log("form was submitted");
 
@@ -20,6 +20,11 @@ document.addEventListener('DOMContentLoaded', async function (event) {
         `
       )
       document.querySelector("#todo").value = ""
+
+      let docRef = await db.collection("todos").add({
+        text: todoText
+      })
+      let todoId = docRef.id
     }
   })
   // Step 2: Read existing to-dos from Firestore
